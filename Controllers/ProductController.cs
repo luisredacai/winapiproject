@@ -133,7 +133,7 @@ public class ProductController : ControllerBase
     
    
    
-   [HttpPost("Post/Consultar_Servicios_contratados_RUC")] 
+   [HttpGet("Post/Consultar_Servicios_contratados_RUC")] 
    public async Task<IActionResult> validarSerConRuc(string ruc)
     {
        string searchruc = ruc.Trim();
@@ -188,7 +188,7 @@ public class ProductController : ControllerBase
 
 }
 
- [HttpPost("Post/Consultar_Servicios_contratados_DNI_o_CE")] 
+ [HttpGet("Post/Consultar_Servicios_contratados_DNI_o_CE")] 
 public async Task<IActionResult> validarSerconDNIyCE(string dni,string ce){
    string searchdni = dni.Trim();   
    string searchce = ce.Trim();   
@@ -314,7 +314,7 @@ Object lis ;
        }
     
     }
-[HttpPost("Post/Consultar_distrito_Riesgo")] 
+[HttpGet("Post/Consultar_distrito_Riesgo")] 
 
  public async Task<IActionResult> validarDistritodni(string distrito)
     {
@@ -380,7 +380,7 @@ Object lis ;
     }
 
 
- [HttpPost("Post/Consultar_calcular_score_crediticio_DNI")] 
+ [HttpGet("Post/Consultar_calcular_score_crediticio_DNI")] 
  public async Task<IActionResult> validarScoreDni(String dni)
     {
       string searchdni = dni.Trim(); 
@@ -434,7 +434,7 @@ Object lis ;
        }
     }
 
-[HttpPost("Post/consultar_calcular_score_crediticio_CE")] 
+[HttpGet("Post/consultar_calcular_score_crediticio_CE")] 
  public async Task<IActionResult> validarScoreCE(String ce)
     {
       
@@ -489,7 +489,7 @@ Object lis ;
     }
 
 
-    [HttpPost("Post/consultar_calcular_score_crediticio_RUC_Y_RUC20")] 
+    [HttpGet("Post/consultar_calcular_score_crediticio_RUC_Y_RUC20")] 
     public async Task<IActionResult> validarScoreRuc(String Ruc,String RUC20)
     {
         string searchRuc = Ruc.Trim();

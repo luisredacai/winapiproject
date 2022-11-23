@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Documentos\\ApiProject2\\ApiProject2.csproj": {}
+    "F:\\Documentos\\ApiProject2\\winapiproject\\ApiProject2.csproj": {}
   },
   "projects": {
-    "F:\\Documentos\\ApiProject2\\ApiProject2.csproj": {
+    "F:\\Documentos\\ApiProject2\\winapiproject\\ApiProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Documentos\\ApiProject2\\ApiProject2.csproj",
+        "projectUniqueName": "F:\\Documentos\\ApiProject2\\winapiproject\\ApiProject2.csproj",
         "projectName": "ApiProject2",
-        "projectPath": "F:\\Documentos\\ApiProject2\\ApiProject2.csproj",
+        "projectPath": "F:\\Documentos\\ApiProject2\\winapiproject\\ApiProject2.csproj",
         "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "F:\\Documentos\\ApiProject2\\obj\\",
+        "outputPath": "F:\\Documentos\\ApiProject2\\winapiproject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -75,7 +75,7 @@ public class ProductController : ControllerBase
 
 
 
-     [HttpPost("Get/Consultar_antiguedad_RUC")]
+     [HttpPost("Post/Consultar_antiguedad_RUC")]
     public async Task<IActionResult> GetAntigudadRUC(string ruc){
         
        string searchruc = ruc.Trim();
@@ -133,7 +133,7 @@ public class ProductController : ControllerBase
     
    
    
-   [HttpPost("Get/Consultar_Servicios_contratados_RUC")] 
+   [HttpPost("Post/Consultar_Servicios_contratados_RUC")] 
    public async Task<IActionResult> validarSerConRuc(string ruc)
     {
        string searchruc = ruc.Trim();
@@ -188,7 +188,7 @@ public class ProductController : ControllerBase
 
 }
 
- [HttpPost("Get/Consultar_Servicios_contratados_DNI_o_CE")] 
+ [HttpPost("Post/Consultar_Servicios_contratados_DNI_o_CE")] 
 public async Task<IActionResult> validarSerconDNIyCE(string dni,string ce){
    string searchdni = dni.Trim();   
    string searchce = ce.Trim();   
@@ -314,11 +314,11 @@ Object lis ;
        }
     
     }
-[HttpPost("Get/Consultar_distrito_Riesgo")] 
+[HttpPost("Post/Consultar_distrito_Riesgo")] 
 
  public async Task<IActionResult> validarDistritodni(string distrito)
     {
-       string searchdistrito = distrito.ToLower().Trim(); 
+       string searchdistrito = distrito.ToLower(); 
        
        List<string>lis = new List<string>();
        
@@ -380,7 +380,7 @@ Object lis ;
     }
 
 
- [HttpPost("Get/Consultar_calcular_score_crediticio_DNI")] 
+ [HttpPost("Post/Consultar_calcular_score_crediticio_DNI")] 
  public async Task<IActionResult> validarScoreDni(String dni)
     {
       string searchdni = dni.Trim(); 
@@ -434,7 +434,7 @@ Object lis ;
        }
     }
 
-[HttpPost("Get/consultar_calcular_score_crediticio_CE")] 
+[HttpPost("Post/consultar_calcular_score_crediticio_CE")] 
  public async Task<IActionResult> validarScoreCE(String ce)
     {
       
@@ -472,10 +472,11 @@ Object lis ;
            if(resultado == ""){
          
            lis.Add ("No se encontro el mensaje");
-
+           
            }else{
 
          lis.Add (resultado);
+         
         }
     
           var strserialize = JsonConvert.SerializeObject (lis);
@@ -488,7 +489,7 @@ Object lis ;
     }
 
 
-    [HttpPost("Get/consultar_calcular_score_crediticio_RUC_Y_RUC20")] 
+    [HttpPost("Post/consultar_calcular_score_crediticio_RUC_Y_RUC20")] 
     public async Task<IActionResult> validarScoreRuc(String Ruc,String RUC20)
     {
         string searchRuc = Ruc.Trim();
@@ -597,17 +598,8 @@ Object lis ;
 
     return Ok(strserialize);
     }
-
-
-
-   
-
-
  
-
-
- 
-[HttpPost("consultar Buen pagador RUC")] 
+/*[HttpPost("consultar Buen pagador RUC")] 
 public IActionResult GetBuenPagadorRuc(string ruc){
     List<Equifax> emple = new List<Equifax>();
        
@@ -657,5 +649,5 @@ public IActionResult GetBuenPagadorDni(string dni){
         
        return Ok(json);
         
-}
+}*/
 }

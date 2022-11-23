@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OomauW/vZaAEXXx9Bv/2+2IXsUzfzOV6mM0Wo5kTquD07S58aBRhrfKUkmLnaAXD1W/f9vGznSt2UBh7ZQLkRg==",
+  "dgSpecHash": "R5FrNjFtWHxBK3VHe8NKNyIhSxxI5S/X/1/PbugOscgqCLyrYCktSiOUT8IO+NTOZbFdDbZlflUsS5/U29ws/A==",
   "success": true,
-  "projectFilePath": "F:\\Documentos\\ApiProject2\\ApiProject2.csproj",
+  "projectFilePath": "F:\\Documentos\\ApiProject2\\winapiproject\\ApiProject2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diego\\.nuget\\packages\\aqua-core\\5.0.0\\aqua-core.5.0.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\aqua-core-newtonsoft-json\\5.0.0\\aqua-core-newtonsoft-json.5.0.0.nupkg.sha512",

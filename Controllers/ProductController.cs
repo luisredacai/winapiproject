@@ -34,13 +34,13 @@ public class ProductController : ControllerBase
     }
 
  
-     [HttpGet("GetAll")]
+     /*[HttpGet("GetAll")]
     public IActionResult GetAll()
     {
         var empleado = this._da8K2Ujd2Nc9E6Context.Equifaxes.ToList();
         return Ok(empleado);
     }
-
+*/
      [HttpGet("getdoc/{DNI}/{RUC}/{RUC20}Buen pagador")]
         public async Task<IActionResult> GetBuenPagador(string DNI,string RUC,string RUC20)
         {
